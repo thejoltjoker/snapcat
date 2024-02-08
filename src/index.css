@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@300;400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-white;
+  }
+}
+
+@layer components {
+  .button {
+    @apply rounded-md border border-slate-800 bg-slate-50/5 p-3 transition hover:bg-slate-50/10;
+  }
+
+  .input-field {
+    @apply rounded-md border border-slate-700 bg-slate-50/10 p-3 transition active:bg-slate-50/10 disabled:bg-slate-50/20;
+  }
+}
